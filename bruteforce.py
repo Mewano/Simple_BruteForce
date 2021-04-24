@@ -1,3 +1,5 @@
+# Перебор всевозможных паролей
+
 import requests
 
 login = 'cat'
