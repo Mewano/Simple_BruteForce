@@ -1,4 +1,4 @@
-class BruteForceGenerator:
+class BruteForceGenerator:  # Генератор всевозможных паролей по указанному алфавиту
 
     def __init__(self, alphabet='0123456789abcdefghijklmnopqrstuvwxyz'):
         self.alphabet = alphabet
@@ -28,7 +28,7 @@ class BruteForceGenerator:
         return result
 
 
-class ListGenerator:
+class ListGenerator:  # Генератор паролей по токенам
 
     def __init__(self, tokens):
         self.tokens = tokens
@@ -46,7 +46,7 @@ class ListGenerator:
         return token
 
 
-class FileGenerator(ListGenerator):
+class FileGenerator(ListGenerator):  # Частный случай генератора по токенам - генератор по списку популярных паролей
 
     def __init__(self, filename='pop_passwords.txt'):
         with open(filename) as f:
