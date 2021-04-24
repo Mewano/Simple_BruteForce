@@ -1,3 +1,5 @@
+# Логика перебора логинов и паролей
+
 def simple_logic(login_generator, password_generator, query):
     login = login_generator.generate()
     if login is None:
