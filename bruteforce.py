@@ -8,12 +8,11 @@ base = len(alphabet)
 i = 0
 length = 0
 while True:
-    # 1000 -> 3 14 8 -> 3E8 (для 16-ричной с/с)
     x = i
     result = ''
     while len(result) < length:
-        rest = x % base  # остаток от деления
-        x = x // base  # целая часть от деления
+        rest = x % base  
+        x = x // base  
         result = alphabet[rest] + result
 
     data = {'login': login, 'password': result}
